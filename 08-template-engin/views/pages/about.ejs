@@ -1,0 +1,10 @@
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/nav.ejs') %>
+<h1>About EJS</h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ratione impedit facere earum error fuga?</p>
+<% for(let post of posts){%>
+<li><%= post.title %> </li>
+<%} %>
+</body>
+
+</html>

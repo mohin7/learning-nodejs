@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs') %> 
+  <%- include('../partials/nav.ejs') %> 
+  <h1><%= title %> </h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ratione impedit facere earum error fuga?</p>
+
+  <% if(post.published) {  %>
+  <h3>Title: <%= post.title %> </h3>
+  <p>Description: <%= post.body %> </p>
+  <% } else{ %>
+  <p>Post is not published</p>
+  <% } %>
+
+
+  <% if(post.published){ %>
+  <h3>Title: <%= post.title %> </h3>
+  <p>Description: <%= post.body %> </p>
+  <%} else { %>
+  <h3>Post is not published</h3>
+  <% } %>
+
+
+  <%= new Date().toString() %>
+</body>
+
+</html>
